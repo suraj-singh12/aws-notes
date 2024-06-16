@@ -1,0 +1,91 @@
+## Cloud Certification Study
+
+// Module 1
+
+// Note
+Amazon Elastic Compute Cloud (EC2) === server you use to gain access to virtual servers of amazon
+Pay as per use
+
+// Note
+# Cloud Computing: 
+"On demand" delivery of "IT resources" over the internet with "pay-as-you-go" pricing.
+
+Tasks that are repeatitive and time consuming, are the tasks AWS helps you in- Undifferentiated heavy lifting of IT
+
+// Note
+# 3 Cloud computing deployment models:
+Cloud based deployment
+On premise deployment (private cloud deployment) : legacy IT infrastructure
+Hybrid (some applications on premise, rest functionalities in cloud)
+
+// Note
+Benefits of cloud computing
++ Trade upfront expense over variable expense: (You do not have to invest in technology resources before using them)
++ Stop spending money to run and maintain data centers
++ Stop guessing capacity: (Accessing services on-demand helps to prevent excess or limited capacity.)
++ Benefit from massive economies of scale
++ Increase speed and agility
++ Go global in minutes: (You can quickly deploy applications to customers and provide them with low latency.)
+
+// Module 2
+
+// Note
+
+With EC2, you only pay with running instances, not stopped or terminated ones.
+EC2 runs on top of physical host machines managed by AWS using virtualization technology.
+When you spin up an EC2 instance, you don't take the entire host, but you are sharing the host with multiple other instances, known as virtual machines.
+Hypervisor installed on host machine is repsonsible for sharing the underlying physical resources between the virtual machines. This is called Mutitenacy.
+
+Multitenacy: sharing underlying hardware between virtual machines. 
+Hypervisor is responsible for coordinating this multitenacy. Isolating VMs, etc.
+
+EC2 instance allows configuring: type of OS, resources config, software (your or general), database, it will run etc
+increase memory and cpu power of existing EC2 instances: vertical scaling
+increase EC2 instances in number (no change in config): horizontal scaling
+
+// Note
+You control networking aspect of your instace also.
+What type of request can come to your server, if they are public or private accessible is decided by us.
+
+// summary
+Amazon Elastic Compute Cloud provides secure, resizable compute capacity in cloud as amazon EC2.
+
+
+// Note: Video2
+
+There are different types of EC2 instances.
+Each EC2 instance type is grouped under an instance family & optimized for certain types of task.
+(cpu, memory, storage, networking capacity)
+
+EC2 families/instance types: 
+1. General purpose 
+(good for: web services, code repositories, application server, backend server, gaming server, small/medium db)
+
+2. Compute optimized 
+(good for: dedicated gaming Servers, high performance computing (HPC), scientific modelling, batch processing workloads)
+
+3. Memory optimized (memory intensive workload: "high performance databases")
+
+4. Accelerated computing (good for floating point number calculations, graphic processing, data pattern matching, utilize hardware accelerators, game streaming, application streaming)
+
+5. Storage optimized 
+(good for: workloads that require high performance for locally stored data, distributed file system, high frequency online transaction processing (OLTP), data warehousing application, high IOPS reqmnt apps)
+
+
+// Note: Video3
+
+# Amazon EC2 purchase options
+1. On demand (paying for the amount of time you use it, depending on instance type & OS)
+
+2. Savings Plans (low prices of EC2 usage in exchange of "commitment to a consistent amount of usage, measured in $ dollar/hr for 1 or 3 year term") - savings upto 72% on aws compute usage regardless of  instance family, size, OS, tenancy, or aws region, etc.
+
+3. Reserved Instances (steady state workloads/predictable usage workloads) - offers 75% discount vs on demand pricing. Qualify when you commit to 1 or 3 year term and can pay for them in 3 payment options 
+(
+    a. upfront (all money in one go in beginning), 
+    b. partial upfront, 
+    c. no upfront (you don't pay in beginning)
+)
+
+4. Spot instances  (allow to use spare amazon EC2 instances for upto 90% off the on demand price, but aws can reclaim them anytime it needs giving you a 2 min warning to finish the work & save state, you can resume later. Good for workloads that can tolerate interruption. Example: batch workloads.)
+
+5. Dedicated hosts (physical hosts dedicated for your use for EC2. These are for meeting certain compliance requirements. Nobody else shares tenancy of that host. )
