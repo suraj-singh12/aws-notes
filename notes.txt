@@ -98,7 +98,7 @@ Not recommended for workloads that can last for a year or more, better go for re
 # committing early and locking in a minimum level of use with Reserved Instances
 [
     Two types:
-    A. Standard Reserved instance   (good when you know: EC2 instance type, size, & aws region you plan to run them   [eg. m5.xlarge, microsoft windows server, default tenancy])
+    A. Standard Reserved instance   (good when you know: EC2 instance type, size, tenancy & aws region you plan to run them   [eg. m5.xlarge, microsoft windows server, default tenancy])
     
     B. Convertible Reserved instance (good when you: need to run different instance type, & in different availability zone)
 ]
