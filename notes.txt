@@ -112,3 +112,23 @@ Not recommended for workloads that can last for a year or more, better go for re
 
 5. Dedicated hosts (physical hosts dedicated for your use for EC2. These are for meeting certain compliance requirements. Nobody else shares tenancy of that host. )
 > Most expensive.
+
+
+// Note: Video 3
+Autoscaling (Amazon EC2 Auto Scaling)
+
+Within Amazon EC2 scaling we can use 2 approaches:
+1. Dynamic scaling: responds to changing demand
+2. Predictive scaling: automatically scales right no of EC2 instances based on predicted demand.
+
+To scale faster we can combine both.
+
+
+Two ways to handle growing demand:
+1. Scale up  (adding more resources to existing machines) : Verical Scaling
+2. Scale out (adding more no of machines) : Horizontal Scaling
+
+
+
+
+
